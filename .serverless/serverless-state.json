@@ -160,16 +160,8 @@
                   }
                 ],
                 "DefaultCacheBehavior": {
-                  "AllowedMethods": [
-                    "GET",
-                    "HEAD",
-                    "OPTIONS"
-                  ],
-                  "CachedMethods": [
-                    "GET",
-                    "HEAD",
-                    "OPTIONS"
-                  ],
+                  "AllowedMethods": ["GET", "HEAD", "OPTIONS"],
+                  "CachedMethods": ["GET", "HEAD", "OPTIONS"],
                   "ForwardedValues": {
                     "Headers": [
                       "Access-Control-Request-Headers",
@@ -210,10 +202,7 @@
           },
           "WebAppCloudFrontDistributionOutput": {
             "Value": {
-              "Fn::GetAtt": [
-                "WebAppCloudFrontDistribution",
-                "DomainName"
-              ]
+              "Fn::GetAtt": ["WebAppCloudFrontDistribution", "DomainName"]
             }
           }
         }
@@ -310,10 +299,7 @@
       "s3LocalPath": "dist/app/",
       "s3BucketName": "orlov-vitalii-my-shop-app"
     },
-    "plugins": [
-      "serverless-finch",
-      "serverless-single-page-app-plugin"
-    ],
+    "plugins": ["serverless-finch", "serverless-single-page-app-plugin"],
     "pluginsData": {},
     "functions": {},
     "resources": {
@@ -395,16 +381,8 @@
                 }
               ],
               "DefaultCacheBehavior": {
-                "AllowedMethods": [
-                  "GET",
-                  "HEAD",
-                  "OPTIONS"
-                ],
-                "CachedMethods": [
-                  "GET",
-                  "HEAD",
-                  "OPTIONS"
-                ],
+                "AllowedMethods": ["GET", "HEAD", "OPTIONS"],
+                "CachedMethods": ["GET", "HEAD", "OPTIONS"],
                 "ForwardedValues": {
                   "Headers": [
                     "Access-Control-Request-Headers",
@@ -437,10 +415,7 @@
         },
         "WebAppCloudFrontDistributionOutput": {
           "Value": {
-            "Fn::GetAtt": [
-              "WebAppCloudFrontDistribution",
-              "DomainName"
-            ]
+            "Fn::GetAtt": ["WebAppCloudFrontDistribution", "DomainName"]
           }
         }
       }
@@ -467,7 +442,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/orlov-vitalii-my-shop-app/dev/1677307312262-2023-02-25T06:41:52.262Z",
+    "artifactDirectoryName": "serverless/orlov-vitalii-my-shop-app/dev/1678218299574-2023-03-07T19:44:59.574Z",
     "artifact": ""
   }
 }

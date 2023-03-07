@@ -56,14 +56,14 @@ export class ProductsService extends ApiService {
   }
 
   getProducts(): Observable<Product[]> {
-    if (!this.endpointEnabled('product')) {
+    if (!this.endpointEnabled('bff')) {
       console.warn(
         'Endpoint "bff" is disabled. To enable change your environment.ts config'
       );
       return this.http.get<Product[]>('/assets/products.json');
     }
 
-    const url = this.getUrl('product', 'products');
+    const url = this.getUrl('bff', 'products');
     return this.http.get<Product[]>(url);
   }
 
